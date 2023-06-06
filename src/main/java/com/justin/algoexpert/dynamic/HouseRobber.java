@@ -8,7 +8,21 @@ public class HouseRobber {
 
     public static int rob(int[] nums) {
 
+        int N = nums.length;
 
+        // Special handling for empty array case.
+        if (N == 0) {
+            return 0;
+        }
+
+        if(N==1)
+        {
+            return nums[0];
+        }
+        if(N==2)
+        {
+            return Math.max(nums[0],nums[1]);
+        }
         int[] dp=new int[nums.length];
 
         dp[0]=nums[0];
