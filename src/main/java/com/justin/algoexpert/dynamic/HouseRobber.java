@@ -2,7 +2,7 @@ package com.justin.algoexpert.dynamic;
 
 /**
  * @author Justin Mathew @dev_io
- */
+  */
 public class HouseRobber {
 
 
@@ -20,8 +20,6 @@ public class HouseRobber {
         return dp[nums.length - 1];
 
     }
-
-
-
-
+ 
+  
 }
