@@ -1,0 +1,16 @@
+Confusion sorrounding this problem : The "top of the floor" does not refer to the final index of costs. We actually need to "arrive" beyond the array's bounds.
+
+=================
+overlapping subproblems and optimal substructure.
+This is when the solution to a problem can be constructed from solutions to similar and smaller subproblems.
+Solving a smaller version of the problem can be easier and faster, thus if we break up the problem into smaller subproblems,
+ solving them can lead us to the final solution easier and faster
+
+ =========
+ This pattern is known as a recurrence relation, and in this case, the minimum cost to reach the ithi^{th}i
+ th
+   step is equal to minimumCost[i] = min(minimumCost[i - 1] + cost[i - 1], minimumCost[i - 2] + cost[i - 2]). As you can see, we get the solution for the ithi^{th}i
+ th
+   step by using solutions from earlier steps. So, when does the sequence terminate? For this question,
+   the base cases are given in the problem description - we are allowed to start at either step 0 or step 1,
+   so minimumCost[0] and minimumCost[1] are both 0
