@@ -1,0 +1,10 @@
+This is like house robber only
+
+Intuition is
+
+If you want to take nums[i] then you have to skip nums[i-2].
+You are arriving at nums[i] from nums[i-2] skipping nums[i-1].
+If you want to skip nums[i] then you can take nums[i-1] or skip nums[i-1].
+So, you have to take the max of nums[i-1] and nums[i-2].
+
+
