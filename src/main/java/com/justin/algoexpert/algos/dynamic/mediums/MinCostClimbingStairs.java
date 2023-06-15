@@ -1,4 +1,4 @@
-package com.justin.algoexpert.dynamic.mediums;
+package com.justin.algoexpert.algos.dynamic.mediums;
 
 /**
  * @author Justin Mathew @dev_io

@@ -1,4 +1,4 @@
-package com.justin.algoexpert.dynamic.mediums;
+package com.justin.algoexpert.algos.dynamic.mediums;
 
 import java.util.HashMap;
 
