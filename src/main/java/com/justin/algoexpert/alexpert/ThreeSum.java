@@ -14,9 +14,9 @@ import java.util.List;
  */
 public class ThreeSum {
 
-    public static List<List<Integer>> threeNumberSum(int[] array, int targetSum) {
+    public static List<Integer[]> threeNumberSum(int[] array, int targetSum) {
         Arrays.sort(array);  // Sort the array in ascending order
-        List<List<Integer>> triplets = new ArrayList<>();
+        List<Integer[]> triplets = new ArrayList<Integer[]>();
 
         for (int i = 0; i < array.length - 2; i++) {
             int left = i + 1;
@@ -26,16 +26,13 @@ public class ThreeSum {
                 int currentSum = array[i] + array[left] + array[right];
 
                 if (currentSum == targetSum) {
-                    List<Integer> triplet = new ArrayList<>();
-                    triplet.add(array[i]);
-                    triplet.add(array[left]);
-                    triplet.add(array[right]);
-                    triplets.add(triplet);
+                    Integer[] newTriplet={array[i],array[left],array[right]};
+                    triplets.add(newTriplet);
                     left++;
                     right--;
                 } else if (currentSum < targetSum) {
                     left++;
-                } else {
+                } else if(currentSum>targetSum) {
                     right--;
                 }
             }
@@ -48,7 +45,7 @@ public class ThreeSum {
         int[] array = {12, 3, 1, 2, -6, 5, -8, 6};
         int targetSum = 0;
 
-        List<List<Integer>> result = threeNumberSum(array, targetSum);
+        List<Integer[]> result = threeNumberSum(array, targetSum);
         System.out.println(result);  // Output: [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]]
     }
 
