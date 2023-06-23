@@ -23,7 +23,7 @@ public class ThreeSum {
             int right = array.length - 1;
 
             while (left < right) {
-                int currentSum =      + array[left] + array[right];
+                int currentSum =      array[i]+ array[left] + array[right];
 
                 if (currentSum == targetSum) {
                     Integer[] newTriplet={array[i],array[left],array[right]};
