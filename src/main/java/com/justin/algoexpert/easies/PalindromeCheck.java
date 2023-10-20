@@ -4,7 +4,8 @@ package com.justin.algoexpert.easies;
  * @author Justin Mathew @dev_io
  */
 public class PalindromeCheck {
-         public boolean isPalindrome(int x) {
+         public static boolean isPalindrome(int x) {
+
             // Special cases:
             // As discussed above, when x < 0, x is not a palindrome.
             // Also if the last digit of the number is 0, in order to be a palindrome,
@@ -25,6 +26,10 @@ public class PalindromeCheck {
             // since the middle digit doesn't matter in palindrome(it will always equal to itself), we can simply get rid of it.
             return x == revertedNumber || x == revertedNumber / 10;
         }
+
+    public static void main(String[] args) {
+        System.err.println(isPalindrome(0));
+    }
 
 
 }
