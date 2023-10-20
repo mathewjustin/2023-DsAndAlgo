@@ -5,6 +5,7 @@ package com.justin.algoexpert.easies;
  */
 public class PalindromeCheck {
          public static boolean isPalindrome(int x) {
+
             // Special cases:
             // As discussed above, when x < 0, x is not a palindrome.
             // Also if the last digit of the number is 0, in order to be a palindrome,
@@ -29,5 +30,6 @@ public class PalindromeCheck {
     public static void main(String[] args) {
         System.err.println(isPalindrome(0));
     }
+
 
 }
